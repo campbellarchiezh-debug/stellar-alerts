@@ -10,6 +10,8 @@ export * from './merkle';
 // Single source of truth for Stellar StrKey / transaction-hash validation
 // (Ed25519 public keys, contract IDs, muxed addresses, transaction hashes).
 export * from './strkey';
+// Soroban ScVal XDR conversion utility library
+export * from './soroban/scval-parser';
 
 const dateDTO = z.union([z.date(), z.string()]);
 
